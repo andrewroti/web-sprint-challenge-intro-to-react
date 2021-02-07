@@ -13,10 +13,10 @@ const Character = (props)=>{
         <div className='info_container'>
             <ul>
                 <li>Name: {chars.name}</li>
-                {/* <li>Gender: {gender}</li>
-                <li>Birth Year: {birthYear}</li>
-                <li>Eye Color: {eyeColor}</li>
-                <li>Hair Color: {hairColor}</li> */}
+                <li>Gender: {chars.gender}</li>
+                <li>Birth Year: {chars.birth_year}</li>
+                <li>Eye Color: {chars.eye_color}</li>
+                <li>Hair Color: {chars.hair_color}</li>
             </ul>
         </div>
     </div>
