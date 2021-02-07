@@ -15,16 +15,24 @@ const App = () => {
   // sync up with, if any.
   const [name, setName] = useState();
   const [gender, setGender] = useState();
+  const [hairColor, setHairColor] = useState();
+  const [eyeColor, setEyeColor] = useState();
+  const [birthYear, setBirthYear] = useState();
   
 
   useEffect(()=>{
 
     
     axios.get(apiURL)
+    
+    
     .then(res =>{
       
       setName(res.data.name);
       setGender(res.data.gender);
+      setBirthYear(res.data.birth_year);
+      setEyeColor(res.data.eye_color);
+      setHairColor(res.data.hair_color);
     })
     .catch(err=>{
       console.log(err.data);
@@ -46,7 +54,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
             
-      <Character charName={name} gender={gender}/>
+      <Character charName={name} gender={gender} eyeColor={eyeColor} hairColor={hairColor} birthYear={birthYear}/>
     </div>
   );
 }
