@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Character from './components/Character.js';
-import axios from 'axios';
+// import axios from 'axios';
 import {data} from './mocks/handlers.js';
 
 // const count = 0;
@@ -15,10 +15,10 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
   const [char, setName] = useState(data);
-  const [gender, setGender] = useState();
-  const [hairColor, setHairColor] = useState();
-  const [eyeColor, setEyeColor] = useState();
-  const [birthYear, setBirthYear] = useState();
+  // const [gender, setGender] = useState();
+  // const [hairColor, setHairColor] = useState();
+  // const [eyeColor, setEyeColor] = useState();
+  // const [birthYear, setBirthYear] = useState();
   
 
   // useEffect(()=>{
