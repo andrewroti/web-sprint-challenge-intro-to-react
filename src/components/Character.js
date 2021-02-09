@@ -7,6 +7,8 @@ import styled from 'styled-components';
 const Character = (props)=>{
 
     const {char} = props;
+    console.log(char.name);
+    console.log(char);
     const StyledDiv = styled.div`
             margin:auto;
             margin-top: 5px;
@@ -25,7 +27,7 @@ const Character = (props)=>{
 
 
 
-    return(
+    return (
     <StyledDiv>
         <h3>{char.name}</h3>
         <div className='info_container'>
